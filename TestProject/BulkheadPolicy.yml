@@ -1,0 +1,11 @@
+kind: InboundBulkHead
+apiVersion: api.ibm.com/v1
+metadata:
+  name: BulkheadPolicy
+  namespace: TestProject
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - webMethods
+spec: {}

@@ -1,0 +1,11 @@
+kind: InboundMessaging
+apiVersion: api.ibm.com/v1
+metadata:
+  name: ewdfdsaf
+  namespace: TestProject
+  version: "1.0"
+  tags: []
+  labels:
+    gatewayTypes:
+      - webMethods
+spec: {}

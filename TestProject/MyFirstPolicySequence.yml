@@ -1,0 +1,15 @@
+kind: StagedPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: MyFirstPolicySequence
+  namespace: TestProject
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - webMethods
+spec:
+  routing:
+    - $ref: TestProject:invoke-MyFirstPolicySequence:1.0
+  security:
+    - $ref: TestProject:Identify:1.0

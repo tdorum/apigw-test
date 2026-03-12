@@ -1,0 +1,22 @@
+kind: IAM
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Identify
+  namespace: TestProject
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - webMethods
+spec:
+  accessControl:
+    - - httpBasic:
+          applicationSecurity:
+            mode: authorize
+  extensions:
+    webm-gateway:
+      apiVersion: api.ibm.com/v1
+      spec:
+        triggerPolicyViolation: false
+        authenticationMode: ANY
+        accessControl: {}
